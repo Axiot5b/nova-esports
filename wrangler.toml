@@ -1,0 +1,25 @@
+name = "nova-esports"
+main = "dist/_worker.js"
+compatibility_date = "2024-04-19"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nova-esports-d1"
+database_id = "93490464-8420-4de3-8d9b-3410a62c4e26"
+migrations_dir = "src/lib/migrations"
+
+[site]
+bucket = "./dist"
+
+[build]
+command = "npm run build"
+watch_dir = "src"
+
+[pages]
+build_output_directory = "dist"
+include = ["/*"]
+exclude = []
+
+[env.production]
+d1_databases = [{ binding = "DB", database_name = "nova-esports-d1", database_id = "93490464-8420-4de3-8d9b-3410a62c4e26" }]
