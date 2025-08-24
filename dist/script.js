@@ -1,3 +1,6 @@
+
+// desplazamiento suave para enlaces internos
+
 const form = document.getElementById('contact-form');
 if (form) {
   form.addEventListener('submit', (e) => {
@@ -8,6 +11,7 @@ if (form) {
 }
 
 // desplazamiento suave para enlaces internos en navegadores antiguos
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));
