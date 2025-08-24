@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Esports - Torneos de League of Legends</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Nova Esports</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#tournaments">Torneos</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Compite al máximo nivel</h2>
+      <p>Organizamos los torneos más electrizantes de League of Legends para jugadores apasionados.</p>
+      <a href="#tournaments" class="btn">Ver próximos torneos</a>
+    </div>
+  </section>
+
+  <section id="tournaments" class="section">
+    <div class="container">
+      <h2>Próximos Torneos</h2>
+      <div class="tournament-list">
+        <div class="tournament-card">
+          <h3>Copa Invocador</h3>
+          <p>Fecha: 15 de Julio</p>
+          <p>Premio: $500</p>
+        </div>
+        <div class="tournament-card">
+          <h3>Desafío Nexus</h3>
+          <p>Fecha: 12 de Agosto</p>
+          <p>Premio: $1000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section dark">
+    <div class="container">
+      <h2>Sobre Nova Esports</h2>
+      <p>Somos una comunidad dedicada a impulsar el talento competitivo en el escenario de League of Legends. Nuestros eventos están diseñados para ofrecer una experiencia profesional a jugadores de todos los niveles.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Nova Esports. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
