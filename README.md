@@ -13,3 +13,6 @@ python -m http.server 8000
 ```
 
 Luego visita `http://localhost:8000`.
+
+Para visualizar el sitio localmente, abre `dist/index.html` en tu navegador.
+
