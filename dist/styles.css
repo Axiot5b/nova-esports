@@ -4,9 +4,19 @@
   padding: 0;
 }
 
+:root {
+  --gold: #d4af37;
+  --dark: #0a0a0a;
+  --gray: #1e1e1e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0a0a0a;
+  background: var(--dark);
   color: #f5f5f5;
   line-height: 1.6;
 }
@@ -23,11 +33,13 @@ body {
   width: 100%;
   top: 0;
   z-index: 100;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
   font-weight: 600;
-  color: #ffb400;
+  color: var(--gold);
 }
 
 .nav-links {
@@ -43,7 +55,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ffb400;
+  color: var(--gold);
 }
 
 .hero {
@@ -80,7 +92,7 @@ body {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background: #ffb400;
+  background: var(--gold);
   color: #0a0a0a;
   text-decoration: none;
   font-weight: 600;
@@ -89,7 +101,7 @@ body {
 }
 
 .btn:hover {
-  background: #e09e00;
+  background: #b48c1d;
 }
 
 .section {
@@ -97,7 +109,7 @@ body {
 }
 
 .section.dark {
-  background: #111;
+  background: var(--gray);
 }
 
 
@@ -109,7 +121,7 @@ body {
 }
 
 .match {
-  background: #1e1e1e;
+  background: var(--gray);
   padding: 20px;
   border-radius: 8px;
   display: flex;
@@ -131,7 +143,7 @@ body {
 }
 
 .news-card {
-  background: #1e1e1e;
+  background: var(--gray);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -156,4 +168,34 @@ body {
   text-align: center;
   padding: 20px;
   background: #000;
+}
+
+/* About */
+.about-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+.about-content p {
+  margin: 20px 0;
+}
+
+/* Contact */
+#contact-form {
+  display: grid;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+}
+
+#contact-form button {
+  justify-self: start;
 }
