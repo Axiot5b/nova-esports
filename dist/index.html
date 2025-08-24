@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Esports - Torneos de League of Legends</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Nova Esports</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#schedule">Calendario</a></li>
+          <li><a href="#news">Noticias</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>La liga más grande de League of Legends</h2>
+      <p>Sigue la emoción semana a semana y demuestra tu nivel en la grieta.</p>
+      <a href="#schedule" class="btn">Ver calendario</a>
+    </div>
+  </section>
+
+  <section id="schedule" class="section">
+    <div class="container">
+      <h2>Calendario</h2>
+      <div class="schedule-list">
+        <div class="match">
+          <p class="date">12 Jul 2024</p>
+          <p class="teams">Equipo A vs Equipo B</p>
+          <p class="time">18:00 CET</p>
+        </div>
+        <div class="match">
+          <p class="date">19 Jul 2024</p>
+          <p class="teams">Equipo C vs Equipo D</p>
+          <p class="time">20:00 CET</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="section dark">
+    <div class="container">
+      <h2>Noticias</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Arena de esports">
+          <h3>Gran final de temporada</h3>
+          <p>Descubre quién se coronó campeón de la última edición.</p>
+        </article>
+        <article class="news-card">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Jugador concentrado">
+          <h3>Nuevos talentos</h3>
+          <p>Conoce a las promesas que están dominando el circuito.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="message" placeholder="Mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Nova Esports. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
